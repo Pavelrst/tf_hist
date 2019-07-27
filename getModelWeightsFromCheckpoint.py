@@ -19,4 +19,6 @@ with open("networkWeights.txt" , 'r') as handler:
  listNumbers = [float(x)  for x in listNumbers]
  with open('weights.pkl' , 'wb') as f:
   pickle.dump(listNumbers , f)
+ print("minimum weights : " + str(min(listNumbers)))
+ print("maximum weights : " + str(max(listNumbers)))
 
